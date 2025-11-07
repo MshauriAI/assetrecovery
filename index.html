@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official portal for Kenya's National Digital Asset Recovery, Security, and VASP Tax Enforcement Framework. Coordinated by the National Treasury.">
+    <meta name="keywords" content="Kenya Digital Assets, VASP Tax, Crypto Recovery, PKM Security, FATF Compliance, KRA, CBK, Treasury Kenya">
+    <meta name="author" content="National Treasury of Kenya & LabTech Analytics">
+
+    <!-- Title -->
+    <title>National Digital Asset Recovery, Security & VASP Tax Enforcement Framework | Kenya</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        kenya: {
+                            green: '#006600',
+                            black: '#000000',
+                            red: '#BB0000',
+                            gold: '#FFD700',
+                            accent: '#0A2647',
+                            light: '#F8F9FA',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-kenya-light text-gray-800 leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo & Title -->
+                <div class="flex items-center space-x-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Coat_of_arms_of_Kenya.svg" alt="Coat of Arms of Kenya" class="h-12 w-12">
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-kenya-accent">National Digital Asset Framework</h1>
+                        <p class="text-xs text-gray-600">Republic of Kenya</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="mt-3 md:mt-0">
+                    <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-sm font-medium">
+                        <li><a href="#home" class="hover:text-kenya-green transition">Home</a></li>
+                        <li><a href="#overview" class="hover:text-kenya-green transition">Overview</a></li>
+                        <li><a href="#pillars" class="hover:text-kenya-green transition">Pillars</a></li>
+                        <li><a href="#implementation" class="hover:text-kenya-green transition">Implementation</a></li>
+                        <li><a href="#resources" class="hover:text-kenya-green transition">Resources</a></li>
+                        <li><a href="#contact" class="hover:text-kenya-green transition">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-24 md:py-32">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">Kenya's Digital Asset Future</h1>
+            <p class="text-lg md:text-xl max-w-4xl mx-auto mb-8">
+                A Whole-of-Government Framework for <strong>Digital Asset Recovery, Security, and VASP Tax Enforcement</strong> — led by the National Treasury.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#overview" class="bg-kenya-green text-white px-8 py-3 rounded-md font-semibold hover:bg-green-700 transition">Explore the Framework</a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-kenya-accent transition">Get Involved</a>
+            </div>
+            <div class="mt-12">
+                <p class="scroll-indicator text-3xl">↓</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenya Flag Divider -->
+    <div class="kenya-flag h-2"></div>
+
+    <!-- Executive Summary -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-kenya-accent">Executive Summary</h2>
+                <p class="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
+                    Kenya processes over <strong>KSh 500 billion</strong> in annual crypto volumes. This framework enables lawful recovery of hidden digital assets, secures national PKM, and enforces the <strong>10% VASP excise duty</strong>.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-kenya-light p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-kenya-green text-4xl mb-4">🔍</div>
+                    <h3 class="text-xl font-bold text-kenya-accent">Asset Recovery</h3>
+                    <p class="mt-2 text-gray-600">Automated PKM detection in ESI/CEM using CAT Labs Recovery CAT™️.</p>
+                </div>
+                <div class="bg-kenya-light p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-kenya-red text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-bold text-kenya-accent">Quantum-Resistant Security</h3>
+                    <p class="mt-2 text-gray-600">FHE threshold encryption via Security CAT™️ for PKM custody.</p>
+                </div>
+                <div class="bg-kenya-light p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-kenya-gold text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold text-kenya-accent">Tax Enforcement</h3>
+                    <p class="mt-2 text-gray-600">VTEIS automates 10% excise duty compliance across 300+ VASPs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Pillars -->
+    <section id="pillars" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-kenya-accent">Three Strategic Pillars</h2>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Pillar 1 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-xl shadow-lg" data-aos="fade-right">
+                    <div>
+                        <h3 class="text-2xl font-bold text-kenya-green mb-4">Pillar 1: Recovery & Security (CAT Labs)</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Automated PKM detection in petabytes of seized data</li>
+                            <li>Quantum-resistant FHE threshold encryption</li>
+                            <li>Zero-trust ESI/CEM handling</li>
+                            <li>National Digital Asset Recovery & Security Unit (NDARSU)</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="CAT Labs Recovery" class="rounded-lg shadow-md w-full max-w-md">
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-xl shadow-lg md:grid-flow-row-dense" data-aos="fade-left">
+                    <div class="md:order-2">
+                        <h3 class="text-2xl font-bold text-kenya-red mb-4">Pillar 2: VASP Tax Enforcement (VTEIS)</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>IKNAIO Pathfinder + Automator integrated with iTax</li>
+                            <li>Real-time fee flow monitoring</li>
+                            <li>Offshore & P2P evasion detection</li>
+                            <li>CARF & POCAMLA compliance</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center md:order-1">
+                        <img src="https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="VASP Tax System" class="rounded-lg shadow-md w-full max-w-md">
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-xl shadow-lg" data-aos="fade-right">
+                    <div>
+                        <h3 class="text-2xl font-bold text-kenya-black mb-4">Pillar 3: Inter-Agency Coordination</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Treasury-led governance council</li>
+                            <li>Training for 100+ officers (Year 1)</li>
+                            <li>FATF grey-list exit support</li>
+                            <li>Kenya Digital Asset Academy (Year 3)</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Inter-Agency" class="rounded-lg shadow-md w-full max-w-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Timeline -->
+    <section id="implementation" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-kenya-accent">3-Year Implementation Roadmap</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Year 1 -->
+                <div class="border-l-4 border-kenya-green pl-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold text-kenya-green">Year 1: Foundation</h3>
+                    <p class="mt-2 text-gray-600">Pilot deployments, NDARSU launch, 100 officers trained</p>
+                    <p class="mt-4 font-semibold text-kenya-accent">Outcome: KSh 500M recovered</p>
+                </div>
+                <!-- Year 2 -->
+                <div class="border-l-4 border-kenya-red pl-6" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold text-kenya-red">Year 2: Scale-Up</h3>
+                    <p class="mt-2 text-gray-600">VTEIS nationwide, 300 VASPs onboarded</p>
+                    <p class="mt-4 font-semibold text-kenya-accent">Outcome: KSh 5B tax recovery</p>
+                </div>
+                <!-- Year 3 -->
+                <div class="border-l-4 border-kenya-black pl-6" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-2xl font-bold text-kenya-black">Year 3: Optimization</h3>
+                    <p class="mt-2 text-gray-600">DeFi tracing, EAC collaboration, Academy launch</p>
+                    <p class="mt-4 font-semibold text-kenya-accent">Outcome: KSh 15B cumulative</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#" class="bg-kenya-accent text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-900 transition">Download Full Implementation Plan (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget & Partners -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Budget -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-kenya-accent mb-6">Investment Summary (Year 1)</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <ul class="space-y-3 text-lg">
+                            <li class="flex justify-between"><span>CAT Labs (Recovery + Security)</span> <strong>USD 2.43M</strong></li>
+                            <li class="flex justify-between"><span>IKNAIO (Pathfinder + Automator)</span> <strong>USD 2.87M</strong></li>
+                            <li class="flex justify-between border-t pt-3"><span><strong>Total</strong></span> <strong>USD 5.30M</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Partners -->
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-kenya-accent mb-6">Strategic Technology Partners</h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <a href="#" class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <img src="https://via.placeholder.com/120x60?text=CAT+Labs" alt="CAT Labs" class="mx-auto mb-3">
+                            <p class="font-semibold">Recovery CAT™️ & Security CAT™️</p>
+                        </a>
+                        <a href="#" class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition">
+                            <img src="https://via.placeholder.com/120x60?text=IKNAIO" alt="IKNAIO" class="mx-auto mb-3">
+                            <p class="font-semibold">Pathfinder & Automator</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources & Downloads -->
+    <section id="resources" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-kenya-accent mb-12" data-aos="fade-up">Resources & Downloads</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <a href="#" class="bg-kenya-light p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-5xl mb-3">📄</div>
+                    <h4 class="font-bold">Full Policy Proposal</h4>
+                    <p class="text-sm text-gray-600 mt-2">PDF • 2.4 MB</p>
+                </a>
+                <a href="#" class="bg-kenya-light p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-5xl mb-3">🎓</div>
+                    <h4 class="font-bold">Training Curriculum</h4>
+                    <p class="text-sm text-gray-600 mt-2">PDF • 1.8 MB</p>
+                </a>
+                <a href="#" class="bg-kenya-light p-6 rounded-lg shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-5xl mb-3">⚖️</div>
+                    <h4 class="font-bold">Legal Framework</h4>
+                    <p class="text-sm text-gray-600 mt-2">VASP Act 2025 • PDF</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="py-16 bg-kenya-accent text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4">Contact the Framework Secretariat</h3>
+                    <p class="mb-6">National Treasury of Kenya<br>Digital Asset Policy Division</p>
+                    <ul class="space-y-2">
+                        <li>📍 Harambee Avenue, Nairobi</li>
+                        <li>📧 digitalassets@treasury.go.ke</li>
+                        <li>📞 +254 20 225 0229</li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4">Partner with Us</h3>
+                    <p class="mb-6">LabTech Analytics is the technical lead for framework deployment.</p>
+                    <p>📧 contact@labtechanalytics.co.ke<br>🌐 www.labtechanalytics.co.ke</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center items-center space-x-2 mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Coat_of_arms_of_Kenya.svg" alt="Kenya" class="h-8">
+                <p class="text-sm">©️ 2025 National Treasury of Kenya. All rights reserved.</p>
+            </div>
+            <p class="text-xs text-gray-400">Developed in partnership with <strong>LabTech Analytics</strong></p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

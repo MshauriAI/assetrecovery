@@ -1,0 +1,20 @@
+{
+  "name": "assetrecovery",
+  "version": "1.0.0",
+  "description": "Official portal for Kenya's National Digital Asset Recovery, Security, and VASP Tax Enforcement Framework.",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "patch-package": "^8.0.0",
+    "vite": "^5.4.21"
+  }
+}
