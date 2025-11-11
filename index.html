@@ -54,24 +54,19 @@
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3">
-            <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex justify-between items-center">
                 <!-- Logo & Title -->
                 <div class="flex items-center space-x-4">
-                    <svg class="h-12 w-auto flex-shrink-0" viewBox="0 0 240 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="35" cy="35" r="28" fill="#006600" opacity="0.1"/>
-                        <path d="M35 15 L35 55 M15 35 L55 35 M25 25 L45 45 M25 45 L45 25" stroke="#006600" stroke-width="3" stroke-linecap="round"/>
-                        <text x="70" y="32" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0A2647">LabTech</text>
-                        <text x="70" y="52" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#006600">Analytics</text>
-                    </svg>
-                    <div class="border-l-2 border-gray-300 pl-4">
+                    <img src="/logo.jpeg" alt="LabTech Analytics Logo" class="h-12 w-auto">
+                    <div class="border-l-2 border-gray-300 pl-4 hidden sm:block">
                         <h1 class="text-lg md:text-xl font-bold text-kenya-accent">National Digital Asset Framework</h1>
                         <p class="text-xs text-gray-600">Republic of Kenya</p>
                     </div>
                 </div>
 
-                <!-- Navigation -->
-                <nav class="mt-3 md:mt-0">
-                    <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-sm font-medium">
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6 text-sm font-medium">
                         <li><a href="#home" class="hover:text-kenya-green transition">Home</a></li>
                         <li><a href="#overview" class="hover:text-kenya-green transition">Overview</a></li>
                         <li><a href="#pillars" class="hover:text-kenya-green transition">Pillars</a></li>
@@ -80,7 +75,27 @@
                         <li><a href="#contact" class="hover:text-kenya-green transition">Contact</a></li>
                     </ul>
                 </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-kenya-accent focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="menu-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+                <ul class="flex flex-col space-y-3 text-sm font-medium">
+                    <li><a href="#home" class="block hover:text-kenya-green transition">Home</a></li>
+                    <li><a href="#overview" class="block hover:text-kenya-green transition">Overview</a></li>
+                    <li><a href="#pillars" class="block hover:text-kenya-green transition">Pillars</a></li>
+                    <li><a href="#implementation" class="block hover:text-kenya-green transition">Implementation</a></li>
+                    <li><a href="#resources" class="block hover:text-kenya-green transition">Resources</a></li>
+                    <li><a href="#contact" class="block hover:text-kenya-green transition">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -740,6 +755,28 @@
             easing: 'ease-in-out',
             once: true,
             offset: 100
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuOpen = document.getElementById('menu-open');
+        const menuClose = document.getElementById('menu-close');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            menuOpen.classList.toggle('hidden');
+            menuClose.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                menuOpen.classList.remove('hidden');
+                menuClose.classList.add('hidden');
+            });
         });
 
         // Smooth scrolling
